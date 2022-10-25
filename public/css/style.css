@@ -1,0 +1,17 @@
+.navbar-brand {
+    width: 70px;
+}
+
+body {
+    background-color: #353b48;
+}
+
+nav {
+    box-shadow: -2px 2px 11px 1px rgba(0,0,0,0.40);
+    -webkit-box-shadow: -2px 2px 11px 1px rgba(0,0,0,0.40);
+    -moz-box-shadow: -2px 2px 11px 1px rgba(0,0,0,0.40);
+}
+
+.nav-link {
+    font-size: 20px;
+}
