@@ -20,6 +20,16 @@
                     <a class="nav-link {{#xif "urlPath == '/projects'"}}active{{/xif}}" href="/projects">Projets</a>
                 </li>
             </ul>
+                <div class="d-flex">
+            {{#xif "user == 'none'"}}
+                    <a class="btn btn-outline-light" href="/login">Connexion</a>
+                    <a class="btn btn-outline-warning" href="/register">Inscription</a>
+            {{/xif}}
+            {{#xif "user != 'none'"}}
+                <comment>TODO : Add "Dashboard" button, login & register form</comment>
+            {{/xif}}
+                </div>
+
         </div>
     </div>
 </nav>

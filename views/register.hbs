@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {{> libs}}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            Inscription
+        </div>
+        <div class="card-body">
+            <form action="/auth/register" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom de la production</label>
+                    <input type="text" class="form-control" id="nameInput" name="name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Mot de passe</label>
+                    <input type="password" class="form-control" id="passwordInput" name="password">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Confirmation du mot de passe</label>
+                    <input type="password" class="form-control" id="passwordConfirmInput" name="passwordConfirm">
+                </div>
+                <button type="submit" class="btn btn-warning">Inscription</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{{#if message }}
+    <h4 class="alert alert-danger">{{message}}</h4>
+{{/if}}
+</body>
+</html>

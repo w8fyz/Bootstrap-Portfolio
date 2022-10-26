@@ -1,7 +1,21 @@
 const express = require('express');
 const path = require('path');
+const dotenv = require('dotenv');
 const cookie = require('cookie-parser');
 const exphbs = require('express-handlebars');
+const mysql = require('./controllers/MySQL');
+
+dotenv.config({
+    path: './.env'
+})
+
+mysql.db.connect((error) => {
+    if(error) {
+        console.log(error);
+    } else {
+        console.log("MYSQL Connected...");
+    }
+})
 
 const app = express();
 
@@ -22,11 +36,6 @@ const hbs = exphbs.create({
             for(var i = 1; i < n+1; ++i)
                 accum += block.fn(i);
             return accum;
-        },
-        debugger: function(obj) {
-            console.log("Current Context");
-            console.log("====================");
-            console.log(obj);
         },
         xif: function (expression, options) {
             return hbs.helpers["x"].apply(this, [expression, options]) ? options.fn(this) : options.inverse(this);
@@ -52,6 +61,9 @@ app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
 
 app.use('/', require('./routes/pages'));
+app.use('/auth', require('./routes/auth'));
+app.use('/action', require('./routes/actions'));
+
 
 app.listen(8080, () => {
     console.log("Server started on Port 8080!");
