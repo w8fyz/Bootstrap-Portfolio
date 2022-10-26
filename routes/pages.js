@@ -34,13 +34,15 @@ router.get('/projects', (req, res) => {
 
 router.get('/login', (req, res) => {
     res.render('login', {
-        urlPath: headerManager.getUrl(req)
+        urlPath: headerManager.getUrl(req),
+        user: checkAuth.getUser(req)
     });
 })
 
 router.get('/register', (req, res) => {
     res.render('register', {
-        urlPath: headerManager.getUrl(req)
+        urlPath: headerManager.getUrl(req),
+        user: checkAuth.getUser(req)
     });
 })
 
