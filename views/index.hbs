@@ -6,8 +6,49 @@
     <title>Thibeau - Accueil</title>
 </head>
 {{> header}}
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <body>
 
+<div class="container">
+    <div class="row justify-content-md-center colPadding">
+        <div class="col-auto">
+            <img src="https://fyz.center/images/irl_title.png" style="width: 150px; margin: 0px;">
+        </div>
+    <div class="row justify-content-md-center title">
+        <div class="col-auto">
+            <p>Salut !</p>
+        </div>
+        <div class="col-auto handAnimation">
+            <img src="medias/wave_emoji.png" style="width: 60px; margin: 0px;">
+        </div>
+        <div class="col-auto">
+            <p>Moi c'est </p>
+        </div>
+        <div class="col-auto">
+            <span style="color: #E1B12C;">Thibeau</span>
+        </div>
+        <div class="w-1"></div>
+        <div class="col-md-auto">
+            <p>Je suis un </p>
+        </div>
+        <div class="col-2">
+            <p class="rolling">créatif</p>
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+    var options = {
+        strings: ['créatif', 'étudiant', 'passionné'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        showCursor: false,
+        loop: true,
+        fadeOut: true
+    };
+
+    var typed = new Typed('.rolling', options);
+</script>
 {{> loader}}
 </body>
 {{> footer}}

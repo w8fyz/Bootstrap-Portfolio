@@ -1,5 +1,47 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.rolling {
+    color: #E1B12C;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+}
+
+.handAnimation img:hover {
+    animation: tilt-shaking 2.5s;
+}
+
 .navbar-brand {
     width: 70px;
+}
+
+.title {
+    font-size: 40px;
+    color: white;
+}
+
+.colPadding div {
+    padding: 6px;
+}
+
+.title span:hover {
+    transition: 0.2s;
+}
+
+nav {
+    margin-bottom: 50px;
 }
 
 body {

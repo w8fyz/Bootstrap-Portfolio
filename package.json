@@ -19,6 +19,7 @@
     "express-handlebars": "^6.0.6",
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.3"
+    "nodemon": "^2.0.3",
+    "typed.js": "^2.0.12"
   }
 }
