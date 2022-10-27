@@ -4,6 +4,26 @@ body {
     flex-direction: column;
 }
 
+.title {
+    color: white;
+}
+
+.progress p {
+    color: #1E2329;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: -5px;
+    font-size: 20px;
+}
+
+.subtitle {
+    color: lightgray;
+}
+
+i {
+    color: #1E2329;
+}
+
 .rolling {
     color: #E1B12C;
 }
