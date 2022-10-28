@@ -79,6 +79,19 @@ nav {
     -moz-box-shadow: -2px 2px 11px 1px rgba(0,0,0,0.40);
 }
 
+.imgProject {
+    width: 200px;
+    align-self: center;
+}
+
+span {
+    margin: 3px;
+}
+
+.card-text {
+    color: lightgray;
+}
+
 .nav-link {
     font-size: 20px;
 }
