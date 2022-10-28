@@ -1,3 +1,8 @@
+.progressSpace {
+    margin-top: 15px;
+    height: 25px;
+}
+
 body {
     display: flex;
     min-height: 100vh;
