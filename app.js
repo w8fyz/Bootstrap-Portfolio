@@ -64,6 +64,6 @@ app.use('/auth', require('./routes/auth'));
 app.use('/action', require('./routes/actions'));
 
 
-app.listen(8080, () => {
-    console.log("Server started on Port 8080!");
+app.listen(9080, () => {
+    console.log("Server started on Port 9080!");
 });

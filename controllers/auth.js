@@ -1,4 +1,3 @@
-const mysql = require('MySQL');
 const checkAuth = require("../middlewares/checkAuth");
 const jwt = require("jsonwebtoken");
 const bcrypt = require('bcryptjs')
