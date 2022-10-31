@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+/*const mysql = require('mysql');
 
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
@@ -8,3 +8,4 @@ const db = mysql.createConnection({
 })
 
 exports.db = db;
+*/
