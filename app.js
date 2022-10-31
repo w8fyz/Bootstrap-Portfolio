@@ -9,13 +9,13 @@ dotenv.config({
     path: './.env'
 })
 
-mysql.db.connect((error) => {
+/*mysql.db.connect((error) => {
     if(error) {
         console.log(error);
     } else {
         console.log("MYSQL Connected...");
     }
-})
+})*/
 
 const app = express();
 
