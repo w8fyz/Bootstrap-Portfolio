@@ -13,6 +13,21 @@ body {
     color: white;
 }
 
+.mainParagraph {
+    color: white;
+    font-size: 30px;
+}
+
+.textInput h2  {
+    color: #E1B12C;
+    font-size: 50px;
+}
+
+.textInput p {
+    color: white;
+    font-size: 20px;
+}
+
 .progress p {
     color: #1E2329;
     position: absolute;
